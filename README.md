@@ -9,7 +9,7 @@ When the program is run, the following is printed:
 ```
 Welcome to the BMI Calculator!
 Options:
-1 - BMI Chec
+1 - BMI Check
 9 - Quit
 Enter your choice:
 ```
@@ -34,10 +34,10 @@ Enter your height in m/in (eg. 65 in):
 
 After these two values are entered, the program automatically calculates the value of the BMI index as well as the associated category (shown below).
 
-Underweight:    BMI < 18.5
-Normal weight:  18.5 <= BMI < 25
-Overweight:     25 <= BMI < 30
-Obese:          30 < BMI
+Underweight:    BMI < 18.5 <br/>
+Normal weight:  18.5 <= BMI < 25 <br/>
+Overweight:     25 <= BMI < 30 <br/>
+Obese:          30 < BMI <br/>
 
 The results are then printed along with the entered weight and height, an example of which is shown below:
 
