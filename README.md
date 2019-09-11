@@ -32,7 +32,7 @@ Enter your height in m/in (eg. 65 in):
 
 ## BMI Calculation and Output
 
-After these two values are entered, the program automatically calculates the value of the BMI index as well as the associated category (shown below).
+After these two values are entered, the program automatically calculates the value of the BMI index as well as the associated category (shown below). BMI is calculated as the weight in kilograms divided by height in meters squared (taken from: https://www.cdc.gov/healthyweight/assessing/bmi/childrens_bmi/childrens_bmi_formula.html)
 
 Underweight:    BMI < 18.5 <br/>
 Normal weight:  18.5 <= BMI < 25 <br/>
