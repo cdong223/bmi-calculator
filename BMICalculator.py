@@ -22,18 +22,31 @@ def BMI_DataEntry():
     if w_data[1] not in ["lb","kg"] or h_data[1] not in ["in","m"]:
         print("Please give an appropriate input.\n")
         return
-    if w_data[0].isdigit()==False or h_data[0].isdigit()==False:
-        print("Please give an appropriate input.\n")
-        return
-
     if w_data[1] == "lb":
-        weight = float(w_data[0])/2.20462 #convert lb to kg
+        try:
+            weight = float(w_data[0])/2.20462 #convert lb to kg
+        except ValueError:
+             print("Please give an appropriate input.\n")
+             return
     else:
-        weight = float(w_data[0])
+        try:
+            weight = float(w_data[0])
+        except ValueError:
+             print("Please give an appropriate input.\n")
+             return
     if h_data[1] == "in":
-        height = float(h_data[0])/39.37 #convert in to m
+        try:
+            height = float(h_data[0])/39.37 #convert in to m
+        except ValueError:
+             print("Please give an appropriate input.\n")
+             return
     else:
-        height = float(h_data[0])
+        try:
+            height = float(h_data[0])
+        except ValueError:
+             print("Please give an appropriate input.\n")
+             return
+             
     value, result = BMI_Calculator(weight,height)
     print("\nThe entered weight is {} {}".format(w_data[0], w_data[1]))
     print("The entered height is {} {}".format(h_data[0], h_data[1]))
